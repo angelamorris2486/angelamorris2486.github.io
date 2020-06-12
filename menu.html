@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        
+
+      
+        
+        li a:hover {
+          background-color: #111;
+        }
+        .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: rgb(241, 237, 237);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgb(8, 8, 8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item8 {
+  grid-area: 1 / 2 / 5 / 6;
+}
+        </style>
+        </head>
+        <body>
+        
+        <ul>
+          <li><a class="active" href="Giodanos Pizza.html">Home</a></li>
+          <li><a href="onlineorder.html">Order Online</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <center>
+        <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+          <div class="w3-content">
+          
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">The Menu</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+              <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red"></div>
+              </a>
+              <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red"></div>
+              </a>
+              <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red"></div>
+              </a>
+            </div>
+        
+            <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+              <h1><b>Margherita Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.21</span></h1>
+              <p class="w3-text-grey">Mozzarella cheese, fresh basil, salt, extra virgin olive oil</p>
+              <hr>
+           
+              <h1><b>Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.99</span></h1>
+              <p class="w3-text-grey">Four cheeses (mozzarella, provalone, cheddar, parmesan)</p>
+              <hr>
+              
+              <h1><b>Veggie Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.99</span></h1>
+              <p class="w3-text-grey">Spinach, mushrooms, onions, fresh tomatoes, zucchini, artichoke hearts, garlic</p>
+              <hr>
+        
+              <h1><b>Meat Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.99</span></h1>
+              <p class="w3-text-grey">Pepperoni, Italian sausage, ham, smoked bacon, seasoned pork and beef</p>
+              <hr>
+        
+              <h1><b>Ceasar Salad</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$8.59</span></h1>
+              <p class="w3-text-grey">Romaine lettuce, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, black pepper</p>
+              <hr>
+        
+              <h1><b>Fruit Salad</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.49</span></h1>
+              <p class="w3-text-grey">Fresh strawberries, pineapple, honeydew, watermelon, grapes, kiwi</p>
+            </div>
+        
+            <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+              <h1><b>Chicken Salad</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.99</span></h1>
+              <p class="w3-text-grey">Special mustard, mayonnaise, egg, celery, onion, pepper, pickles</p>
+              <hr>
+           
+              <h1><b>Pasta Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.95</span></h1>
+              <p class="w3-text-grey">Prepared with one or more types of pasta, with vinegar, oil, tomatoes, salami</p>
+              <hr>
+              
+              <h1><b>Clam Chowder Soup</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.95</span></h1>
+              <p class="w3-text-grey">Clams, broth</p>
+              <hr>
+        
+              <h1><b>Potato Soup</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.95</span></h1>
+              <p class="w3-text-grey">Potatos, celery, carrots, broth</p>
+            </div>
+        
+        
+            <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+              <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal </span><span class="w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+              <p class="w3-text-grey">Ask the waiter</p>
+              <hr>
+           
+              <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.50</span></h1>
+              <p class="w3-text-grey">Bread with pesto, green tomatoes, yellow onion, organic garlic</p>
+              <hr>
+              
+              <h1><b>Garlic Bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+              <p class="w3-text-grey">Grilled ciabatta, butter, green onions</p>
+              <hr>
+              
+              <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+              <p class="w3-text-grey">Green tomatoes and mozzarella</p>
+            </div><br>
+          </center>
+          </div>
+        </div>
+        
