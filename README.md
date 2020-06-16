@@ -1,2 +1,0 @@
-# Giordanos-Pizza
-Project One
